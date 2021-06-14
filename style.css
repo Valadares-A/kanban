@@ -44,6 +44,10 @@ body {
   display: flex !important;
 }
 
+.w-100{
+  width: 100% !important;
+}
+
 .flex-column {
   flex-direction: column !important;
 }
@@ -54,6 +58,7 @@ body {
 
 .board-column {
   margin-left: 20px;
+  min-width: 255px;
 }
 
 .column-body {
@@ -62,4 +67,8 @@ body {
 
 .card textarea {
   resize: none;
+}
+
+.new-column-button {
+  margin-left: 20px;
 }

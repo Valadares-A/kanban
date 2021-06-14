@@ -18,57 +18,39 @@
     </header>
 
     <div class="board d-flex">
-      <div #bc1 class="board-column d-flex flex-column">
+      <div
+        id="dropZone"
+        class="board-column d-flex flex-column"
+        ondrop="dropHandler(event)"
+        ondragover="dragOvertHandler(event)"
+      >
         <div class="column-header" onclick="onInputClick(event)">
           <input
+            class="w-100"
             type="text"
             placeholder="Set the name of column..."
             onkeyup="handleInputKeys(event)"
-            style="width: 100%"
             onblur="onInputLostFocus(event)"
             disabled="true"
           />
-          <p style="display: none">huehuehueu</p>
         </div>
         <div class="column-body">
           <div
-            #bc1-c1
             class="card"
             onclick="onInputClick(event)"
             onfocusout="onInputLostFocus(event)"
             draggable="true"
-            ondragstart="dragCardStart(event)"
+            ondragstart="dragStartHandler(event)"
           >
-            <textarea
-              name="pronto"
-              id="pronto"
-              cols="30"
-              rows="10"
-              disabled="true"
-            ></textarea>
+            <textarea cols="30" rows="10" disabled="true"></textarea>
           </div>
           <div class="new-card-button">
             <button onclick="addNewCard(event)">Add new card</button>
           </div>
         </div>
       </div>
-      <div #bc1 class="board-column d-flex flex-column">
-        <div class="column-header" onclick="onInputClick(event)">
-          <input
-            type="text"
-            placeholder="Set the name of column..."
-            onkeyup="handleInputKeys(event)"
-            style="width: 100%"
-            onblur="onInputLostFocus(event)"
-            disabled="true"
-          />
-          <p style="display: none">huehuehueu</p>
-        </div>
-        <div class="column-body">
-          <div class="new-card-button">
-            <button onclick="addNewCard(event)">Add new card</button>
-          </div>
-        </div>
+      <div class="new-column-button">
+        <button onclick="addNewColumn(event)">Add new column</button>
       </div>
     </div>
 
