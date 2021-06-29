@@ -2,7 +2,7 @@
 # kanban
 Simple organise projects<br/>
 
-[Teste o kanban aqui](https://shadowruge.github.io/kanban/):sunglasses:<br />
+[Teste o kanban aqui](https://valadares-a.github.io/kanban/)<br />
 -- 
 Ajude-nos a melhorar este código, participe!
 <br />
